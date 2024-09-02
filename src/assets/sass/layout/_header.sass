@@ -1,0 +1,77 @@
+.header
+   background: $twitter-blue
+   ul
+      display: flex
+
+      li
+         margin-left: $margin-top
+
+.burger
+   display: none
+
+@media (max-width: 767px)
+   body.lock
+      overflow: hidden
+   .burger
+      display: block
+      position: absolute
+      width: 30px
+      height: 20px
+      cursor: pointer
+      top: 0
+      right: 0
+      margin: 20px
+      z-index: 3000
+
+   .burger span
+      position: absolute
+      background-color: $white
+      left: 0
+      width: 100%
+      height: 2px
+      top: 9px
+      transition: all 0.3s ease 0s
+
+   .burger:before, .burger:after
+      content: ""
+      background-color: $white
+      position: absolute
+      width: 100%
+      height: 2px
+      left: 0
+      transition: all 0.3s ease 0s
+
+   .burger:before
+      top: 0
+
+   .burger:after
+      bottom: 0
+
+   .burger.active span
+      transform: scale(0)
+
+   .burger.active:before
+      transform: rotate(45deg)
+      top: 9px
+
+   .burger.active:after
+      transform: rotate(-45deg)
+      bottom: 9px
+
+   .header__nav
+      position: fixed
+      top: -100%
+      left: 0
+      width: 100%
+      height: 100%
+      background: $twitter-blue
+      overflow: auto
+      transition: all 0.3s ease 0s
+      padding: 70px 10px 20px 10px
+   .header__nav.active
+      top: 0
+      ul
+         display: block
+   .header__link
+      display: block
+      margin-top: 40px

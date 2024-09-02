@@ -1,0 +1,26 @@
+.form
+   &__wrapper
+      @include section-wrapper
+
+
+.custom
+   max-width: 800px   
+   &__form
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+   &__form--item
+      margin-top: $margin-top      
+      label
+         width: 100%
+         display: block
+         font-size: 15px
+         margin: 16px 0px
+         color: $twitter-blue
+      input::placeholder
+         font-size: 16px
+         color: $white
+         width: 100%
+
+

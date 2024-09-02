@@ -1,0 +1,11 @@
+.button
+   @include button-style($white, $twitter-blue)
+
+.red-button
+   @include button-style($white, $red)
+
+.button:hover, .red-button:hover
+   @include button-style($twitter-blue, #fff)
+
+.button:active, .red-button:active
+   @include button-style($black, #fff)
