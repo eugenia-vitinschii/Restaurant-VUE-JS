@@ -1,26 +1,29 @@
-.heading
-   @include font-style($heading, $margin-sm, center, $twitter-blue)
+.header__link
+   text-transform: uppercase
+   color: $dark-green
 
-.subheading
-   @include font-style($subheading, $margin-sm, center, $twitter-blue)
+.header__link:hover
+   color: $dark-green
+   border-bottom: 1px solid $dark-green
 
-.body-text
-   @include font-style($body-text, $margin-sm, center, $twitter-blue)
+.heading-white
+   @include font-style($heading, $padding-top, $white)
 
+.subheading-white
+   @include font-style($subheading, $padding-top, $white)
 
+.body-text-white
+   @include font-style($body-text, $padding-top, $white)
 
-@media (max-width: 767px)
-   .heading
-      @include font-style($heading-sm, $margin-sm, center, $twitter-blue)
+.heading-green
+   @include font-style($heading, $padding-top, $dark-green)
 
-   .subheading
-      @include font-style($subheading-sm, $margin-sm, center, $twitter-blue)
+.subheading-green
+   @include font-style($subheading, $padding-top, $dark-green)
 
-   .body-text
-      @include font-style($body-text-sm, $margin-sm, center, $twitter-blue)
+.body-text-green
+   @include  font-style($body-text, $padding-top, $dark-green)
 
-a 
-   color: $white
+// @media (max-width: 767px)
 
-a:hover
-   text-decoration: underline
+ 

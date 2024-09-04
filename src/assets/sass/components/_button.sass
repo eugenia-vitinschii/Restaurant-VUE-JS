@@ -1,11 +1,11 @@
-.button
-   @include button-style($white, $twitter-blue)
+.button-green
+   @include button-style($dark-green, transparent, $dark-green)
 
-.red-button
-   @include button-style($white, $red)
+.button-white
+   @include button-style($dark-green, $white, $dark-green)
 
-.button:hover, .red-button:hover
-   @include button-style($twitter-blue, #fff)
+.button-green:hover, .button-green:active
+   @include button-style($dark-green, $white, $dark-green)
 
-.button:active, .red-button:active
-   @include button-style($black, #fff)
+.button-white:hover, .button-white:active
+   @include button-style($white, $dark-green, $white)

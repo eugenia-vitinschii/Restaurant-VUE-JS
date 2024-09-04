@@ -1,19 +1,21 @@
-@mixin button-style($color, $bg)
+@mixin button-style($color, $bg, $border)
    text-align: center
    padding: 5px 20px
    margin: 10px 5px
    font-size: $body-text-sm
-   border: $border
+   border: 1px solid $border
+   text-transform: uppercase
    color: $color
    background: $bg
    transition: $transnision
+   cursor: pointer
 
-   
-@mixin font-style($font-size, $padding-top, $text-align, $white)
+@mixin font-style($font-size, $padding, $color)
+   text-transform: uppercase
    font-size: $font-size
-   padding-top: $padding-top
-   text-align: $text-align
-   color: $white 
+   padding-top: $padding
+   text-align: left
+   color: $color
 
 @mixin section-wrapper
    margin-top: $margin-top
