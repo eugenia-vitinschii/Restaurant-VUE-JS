@@ -1,5 +1,4 @@
-.section  
-   z-index: 80
+.section
    &__wrapper
       padding: 40px 0px
    &__text
@@ -10,18 +9,21 @@
       img
          width: 100%
    &__media
-      width: 400px
+      max-width: 400px
+      display: block
+      z-index: 1
       img
+         animation: $animation-section
          width: 100%
 
 .cardboard
    background-image: url("../img/bg.png")
    background-repeat: repeat
    background-size: 250px 250px
-   &__wrapper 
+   &__wrapper
       display: flex
       justify-content: space-between
- 
+
 .photo
    background-image: url("../img/food-bg.png")
    background-repeat: no-repeat
@@ -33,3 +35,47 @@
    background-repeat: no-repeat
    background-size: cover
    background-attachment: fixed
+
+@media (max-width: 1024px)
+   .section
+
+      &__wrapper
+         padding: 40px 0px
+      &__text
+         width: 400px
+      &__buttons
+      &__img
+         width: 150px
+         img
+            width: 100%
+      &__media
+         width: 300px
+         img
+            width: 100%
+
+@media (max-width: 767px)
+   .section
+
+      &__wrapper
+         padding: 40px 0px
+      &__text
+         width: 100%
+         p
+            text-align: center
+      &__buttons
+         text-align: center
+      &__img
+         width: 100px
+         img
+            width: 100%
+      &__media
+         align-self: center
+         width: 120px
+         img
+            width: 100%
+
+   .cardboard
+      &__wrapper
+         display: flex
+         justify-content: space-between
+         flex-direction: column

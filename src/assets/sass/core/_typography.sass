@@ -9,21 +9,38 @@
 .heading-white
    @include font-style($heading, $padding-top, $white)
 
-.subheading-white
-   @include font-style($subheading, $padding-top, $white)
-
-.body-text-white
-   @include font-style($body-text, $padding-top, $white)
-
 .heading-green
    @include font-style($heading, $padding-top, $dark-green)
 
+
+.subheading-white
+   @include font-style($subheading, $padding-top, $white)
+   line-height: 50px
+
 .subheading-green
    @include font-style($subheading, $padding-top, $dark-green)
+   line-height: 50px
 
+.body-text-white
+   @include font-style($body-text, $padding-top, $white)
 .body-text-green
-   @include  font-style($body-text, $padding-top, $dark-green)
+   @include font-style($body-text, $padding-top, $dark-green)
 
-// @media (max-width: 767px)
 
- 
+@media (max-width: 1024px)
+   .heading-white, .heading-green
+      font-size: $heading-sm
+   .subheading-white, .subheading-green
+      font-size: $subheading-sm
+      line-height: 40px
+   .body-text-white, .body-text-green
+      font-size: $body-text-sm
+
+@media (max-width: 767px)
+   .heading-white, .heading-green
+      font-size: $heading-xs
+   .subheading-white, .subheading-green
+      font-size: $subheading-xs
+      line-height: 30px
+   .body-text-white, .body-text-green
+      font-size: $body-text-xs
