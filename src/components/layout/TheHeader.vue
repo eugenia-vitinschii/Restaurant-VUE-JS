@@ -5,13 +5,13 @@
         <nav class="header__nav" :class="{active: showBurger}">
           <ul>
             <li><router-link class="header__link" to="/">Home</router-link></li>
-            <li><router-link class="header__link" to="/about">Menu</router-link></li>
-            <li><router-link class="header__link" to="/about">Order lunch</router-link></li>
-            <li><router-link class="header__link" to="/about">Bowl</router-link></li>
-            <li><router-link class="header__link" to="/about">Catering</router-link></li>
-            <li><router-link class="header__link" to="/about">Order catering</router-link></li>
-            <li><router-link class="header__link" to="/about">catering FAQ</router-link></li>
-            <li><router-link class="header__link" to="/about">Let's connect</router-link></li>
+            <li><router-link class="header__link" to="/menu">Menu</router-link></li>
+            <li><router-link class="header__link" to="/order-lunch">Order lunch</router-link></li>
+            <li><router-link class="header__link" to="/bowl">Bowl</router-link></li>
+            <li><router-link class="header__link" to="/catering">Catering</router-link></li>
+            <li><router-link class="header__link" to="/order-catering">Order catering</router-link></li>
+            <li><router-link class="header__link" to="/catering-faq">catering FAQ</router-link></li>
+            <li><router-link class="header__link" to="/lets-connect">Let's connect</router-link></li>
           </ul>
         </nav>
       </div>
