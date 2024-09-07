@@ -1,25 +1,25 @@
 <template>
   <cardboard-section
-    :heading="'Only Organic'"
-    :subheading="'Order fresh products with delivery'"
-    :button="'view products'"
-    :img="'src/assets/img/lime.png'"
-    :media="'src/assets/img/color-veg-1.png'"
+    :heading="'Banquet menu'"
+    :subheading="'The banquet menu of our restaurant has more than 1500 different items, providing a wide choice of dishes for your unforgettable celebration.'"
+    :button="'LET S CONNECT'"
+    :img="'src/assets/img/menu-start.png'"
+    :media="'src/assets/img/menu-add.png'"
   />
   <!-- menu section -->
   <div class="menu">
     <div class="container">
       <div class="menu__wrapper">
         <menu-heading
-          :heading="'Bevarages'"
-          :img="'src/assets/img/cabbage.png'"
+          :heading="'Ceremonial banquet dishes'"
+          :img="'src/assets/img/menu-1.png'"
         />
         <div class="menu__table">
           <table>
             <tr>
               <td>
               <the-table
-                v-for="menu in menuItems"
+                v-for="menu in banquet"
                 :key="menu.id"
                 :title="menu.title"
                 :description="menu.description"
@@ -33,7 +33,61 @@
     </div>
   </div>
   <!-- scrolling section -->
-  <photo-section :preview="'src/assets/img/lime.png'"/>
+  <photo-section :preview="'src/assets/img/banquet.png'"/>
+  <!-- menu section -->
+  <div class="menu">
+    <div class="container">
+      <div class="menu__wrapper">
+        <menu-heading
+          :heading="'Side dishes'"
+          :img="'src/assets/img/side-dishes.png'"
+        />
+        <div class="menu__table">
+          <table>
+            <tr>
+              <td>
+              <the-table
+                v-for="menu in sideDishes"
+                :key="menu.id"
+                :title="menu.title"
+                :description="menu.description"
+                :price="menu.price"
+              />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- scrolling section -->
+    <photo-section :preview="'src/assets/img/salads.png'"/>
+  <!-- menu section -->
+  <div class="menu">
+    <div class="container">
+      <div class="menu__wrapper">
+        <menu-heading
+          :heading="'Salads'"
+          :img="'src/assets/img/salad-header.png'"
+        />
+        <div class="menu__table">
+          <table>
+            <tr>
+              <td>
+              <the-table
+                v-for="menu in salads"
+                :key="menu.id"
+                :title="menu.title"
+                :description="menu.description"
+                :price="menu.price"
+              />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
    
 <script setup>
@@ -48,25 +102,102 @@ defineOptions({
   name: "MenuPage",
 });
 
-const menuItems = [
+const banquet = [
   {
     id: "2",
-    title: "Belgian Ice Cream",
-    description: "Chocolate, Double Pineapple, Red and White Grapes",
+    title: "Sterlet cooked in herbs",
+    description: "Served with creamy caviar sauce (order from 2 kg), 1000 g.",
     price: "person 2",
   },
   {
     id: "4",
-    title: "Belgian Ice Cream",
-    description: "Chocolate, Double Pineapple, Red and White Grapes",
+    title: "Veal leg marinated in honey and horseradish, baked with mustard seeds",
+    description: "Served with porcini mushroom sauce (order from 4 kg), 1000 g.",
     price: "person 2",
   },
   {
     id: "45r2",
-    title: "Belgian Ice Cream",
-    description: "Chocolate, Double Pineapple, Red and White Grapes",
+    title: "Baked pork ham",
+    description: "Served with porcini mushroom sauce (order from 3 kg), 1000 g",
     price: "person 2",
   },
+  {
+    id: "45dddr2",
+    title: "Whole baked turkey",
+    description: "Served with cranberry sauce, 1pc~3300 / 300 g.",
+    price: "person 2",
+  },
+  {
+    id: "45rhh2",
+    title: "Duck, aged in honey liqueur, stuffed with apples and cherries",
+    description: "Served with Madeira sauce, 1pc~2000 g.",
+    price: "person 2",
+  }
 ];
+
+const sideDishes = [
+  {
+    id: "2rwfw",
+    title: "Country-style fried potatoes",
+    description: "150 g.",
+    price: "person 2",
+  },
+  {
+    id: "2r23frwfw",
+    title: "French fries",
+    description: "150 g.",
+    price: "person 2",
+  },
+  {
+    id: "2rweqw43fw",
+    title: "Grilled vegetables",
+    description: "Champignon, zucchini, eggplant, bell pepper, 150 g",
+    price: "person 2",
+  },
+  {
+    id: "2rweqw43fw",
+    title: "Steamed broccoli",
+    description: "150 g",
+    price: "person 2",
+  },
+]
+const salads = [
+  {
+    id: "2rwf8767w",
+    title: "Caesar salad with chicken",
+    description: "125/65 g.",
+    price: "person 2",
+  },
+  {
+    id: "2wef",
+    title: "Olivier salad with beef tongue",
+    description: "dressed with Japanese mayonnaise, 200 g.",
+    price: "person 2",
+  },
+  {
+    id: "2rhgfdsw",
+    title: "Caesar salad with chicken",
+    description: "125/65 g.",
+    price: "person 2",
+  },
+  {
+    id: "2r45667w",
+    title: "Salad Quail s Nest",
+    description: "Veal tongue, ham, baked beef, quail eggs, cheese, fresh cucumber, 200 g.",
+    price: "person 2",
+  },  {
+    id: "2rwffgdw",
+    title: "Salad with fried salmon slices, crispy lettuce, tangerine slices",
+    description: "with pine nuts and caviar dressing, 200 g.",
+    price: "person 2",
+  },
+  {
+    id: "232367w",
+    title: "Far Eastern Salad",
+    description: "with squid, red caviar, avocado, fresh cucumber, egg and celery, dressed with Japanese mayonnaise, 200 g.",
+    price: "person 2",
+  },
+  
+]
 </script>
 

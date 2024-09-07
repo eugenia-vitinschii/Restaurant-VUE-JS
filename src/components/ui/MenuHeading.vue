@@ -1,7 +1,7 @@
 <template>
   <div class="menu__heading">
     <div class="menu__heading--title">
-      <p class="heading-green">Heading: {{ heading }}</p>
+      <p class="heading-green">{{ heading }}</p>
     </div>
     <div class="menu__heading--img">
       <img :src="img" alt="menu-img" />
