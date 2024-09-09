@@ -2,6 +2,9 @@
   <div class="header">
     <div class="container">
       <div class="header__wrapper">
+        <div class="header__logo">
+          <img src="@/assets/img/header-logo.png" alt="">
+        </div>
         <nav class="header__nav" :class="{active: showBurger}">
           <ul>
             <li><router-link class="header__link" to="/">Home</router-link></li>

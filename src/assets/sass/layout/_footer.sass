@@ -3,5 +3,55 @@
    background-repeat: repeat
    background-size: 250px 250px
    width: 100%
-   p
-      color: $white
+   p, a
+      text-align: center
+   &__wrapper
+      display: flex
+      justify-content: space-between
+      padding: 100px 0px
+   &__logo
+      img
+         width: 250px
+   &__contacts
+   &__contacts--media
+      img
+         width: 50px
+         border: 2px solid transparent
+         transition: $transnision
+         padding: 5px
+         margin: 5px
+      img:hover
+         border: 2px solid $ivory
+   &__contacts--info
+      a
+         display: block
+   &__nav
+   &__nav-items
+   &__nav-item
+      line-height: 30px
+   &__nav-item:hover
+      border-bottom: 1px solid $ivory
+   &__text
+      text-align: center
+
+@media (max-width: 767px)
+   .footer
+      &__logo
+         img
+            width: 150px
+
+@media (max-width: 513px)
+   .footer
+      &__wrapper
+         flex-direction: column-reverse
+         p, a
+         text-align: left
+      &__contacts
+         align-self: center
+         a
+            text-align: center
+      &__logo
+         align-self: center
+         max-width: 300px
+         img
+          width: 100%
