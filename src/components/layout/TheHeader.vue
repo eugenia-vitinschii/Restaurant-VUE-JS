@@ -3,14 +3,13 @@
     <div class="container">
       <div class="header__wrapper">
         <div class="header__logo">
-          <img src="@/assets/img/header-logo.png" alt="">
+          <img src="@/assets/img/logo/header-logo.png" alt="">
         </div>
         <nav class="header__nav" :class="{active: showBurger}">
           <ul>
             <li><router-link class="header__link" to="/">Home</router-link></li>
             <li><router-link class="header__link" to="/menu">Menu</router-link></li>
             <li><router-link class="header__link" to="/order-lunch">Order lunch</router-link></li>
-            <li><router-link class="header__link" to="/bowl">Bowl</router-link></li>
             <li><router-link class="header__link" to="/catering">Catering</router-link></li>
             <li><router-link class="header__link" to="/order-catering">Order catering</router-link></li>
             <li><router-link class="header__link" to="/catering-faq">catering FAQ</router-link></li>

@@ -3,18 +3,18 @@
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__logo">
-          <img src="@/assets/img/footer-logo.png" alt="Logo footer">
+          <img src="@/assets/img/logo/footer-logo.png" alt="Logo footer">
         </div>
         <div class="footer__contacts">
           <div class="footer__contacts--media">
             <a href="https://www.google.com" target="_blank">
-              <img src="@/assets/img/facebook.png" alt="facebook">
+              <img src="@/assets/img/logo/facebook.png" alt="facebook">
             </a>
             <a href="https://www.google.com" target="_blank">
-              <img src="@/assets/img/instagram.png" alt="instagram">
+              <img src="@/assets/img/logo/instagram.png" alt="instagram">
             </a>
             <a href="https://www.google.com" target="_blank">
-              <img src="@/assets/img/youtube.png" alt="instagram">
+              <img src="@/assets/img/logo/youtube.png" alt="instagram">
             </a>
           </div>
           <div class="footer__contacts--info">
@@ -28,7 +28,6 @@
             <li><router-link class="body-text-white footer__nav-item" to="/">Home</router-link></li>
             <li><router-link class="body-text-white footer__nav-item" to="/menu">Menu</router-link></li>
             <li><router-link class="body-text-white footer__nav-item" to="/order-lunch">Order lunch</router-link></li>
-            <li><router-link class="body-text-white footer__nav-item" to="/bowl">Bowl</router-link></li>
             <li><router-link class="body-text-white footer__nav-item" to="/catering">Catering</router-link></li>
             <li><router-link class="body-text-white footer__nav-item" to="/order-catering">Order catering</router-link></li>
             <li><router-link class="body-text-white footer__nav-item" to="/catering-faq">catering FAQ</router-link></li>

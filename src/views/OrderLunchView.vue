@@ -3,11 +3,11 @@
     :heading="'ORDER LUNCH'"
     :subheading="'We deliver standard set lunches.'"
     :button="'LET S CONNECT'"
-    :img="'src/assets/img/lunch-media.png'"
-    :media="'src/assets/img/lunch-img.png'"
+    :img="'src/assets/img/bg-img/order-lunch.png'"
+    :media="'src/assets/img/bg-heading/order-lunch.png'"
   />
   <!-- scrolling section -->
-  <photo-section :preview="'src/assets/img/lucnh-prhoto-section.png'" />
+  <photo-section :preview="'src/assets/img/photo-section/order-lunch.jpg'" />
 </template>
    
    <script setup>

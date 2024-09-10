@@ -3,87 +3,88 @@
     :heading="'Banquet menu'"
     :subheading="'The banquet menu of our restaurant has more than 1500 different items, providing a wide choice of dishes for your unforgettable celebration.'"
     :button="'LET S CONNECT'"
-    :img="'src/assets/img/menu-start.png'"
-    :media="'src/assets/img/menu-add.png'"
+    :img="'src/assets/img/bg-img/menu-img.png'"
+    :media="'src/assets/img/bg-heading/menu-heading.png'"
   />
-  <!-- menu section -->
+  <!-- scrolling section -->
+  <photo-section :preview="'src/assets/img/photo-section/menu-banquet.png'" />
+  <!-- menu section banquet-->
   <div class="menu">
     <div class="container">
       <div class="menu__wrapper">
         <menu-heading
           :heading="'Ceremonial banquet dishes'"
-          :img="'src/assets/img/menu-1.png'"
+          :img="'src/assets/img/white-heading/menu-header1.png'"
         />
         <div class="menu__table">
           <table>
-            <tr>
-              <td>
-              <the-table
-                v-for="menu in banquet"
-                :key="menu.id"
-                :title="menu.title"
-                :description="menu.description"
-                :price="menu.price"
-              />
-              </td>
-            </tr>
+            <the-table
+              v-for="menu in banquet"
+              :key="menu.id"
+              :title="menu.title"
+              :description="menu.description"
+              :price="menu.price"
+            />
           </table>
+        </div>
+        <div class="menu__img">
+          <img src="@/assets/img/white-img/menu-img-1.png" alt="" />
         </div>
       </div>
     </div>
   </div>
   <!-- scrolling section -->
-  <photo-section :preview="'src/assets/img/banquet.png'"/>
-  <!-- menu section -->
+  <photo-section
+    :preview="'src/assets/img/photo-section/menu-sideDishes.jpg'"
+  />
+  <!-- menu section sideDishes-->
   <div class="menu">
     <div class="container">
       <div class="menu__wrapper">
         <menu-heading
           :heading="'Side dishes'"
-          :img="'src/assets/img/side-dishes.png'"
+          :img="'src/assets/img/white-heading/menu-header2.png'"
         />
         <div class="menu__table">
           <table>
-            <tr>
-              <td>
-              <the-table
-                v-for="menu in sideDishes"
-                :key="menu.id"
-                :title="menu.title"
-                :description="menu.description"
-                :price="menu.price"
-              />
-              </td>
-            </tr>
+            <the-table
+              v-for="menu in sideDishes"
+              :key="menu.id"
+              :title="menu.title"
+              :description="menu.description"
+              :price="menu.price"
+            />
           </table>
+        </div>
+        <div class="menu__img">
+          <img src="@/assets/img/white-img/menu-img-2.png" alt="" />
         </div>
       </div>
     </div>
   </div>
-    <!-- scrolling section -->
-    <photo-section :preview="'src/assets/img/salads.png'"/>
-  <!-- menu section -->
+  <!-- scrolling section -->
+  <photo-section :preview="'src/assets/img/photo-section/menu-salads.png'" />
+  <!-- menu section salads-->
   <div class="menu">
     <div class="container">
       <div class="menu__wrapper">
         <menu-heading
           :heading="'Salads'"
-          :img="'src/assets/img/salad-header.png'"
+          :img="'src/assets/img/white-heading/menu-header3.png'"
         />
         <div class="menu__table">
           <table>
-            <tr>
-              <td>
-              <the-table
-                v-for="menu in salads"
-                :key="menu.id"
-                :title="menu.title"
-                :description="menu.description"
-                :price="menu.price"
-              />
-              </td>
-            </tr>
+            <the-table
+              v-for="menu in sideDishes"
+              :key="menu.id"
+              :title="menu.title"
+              :description="menu.description"
+              :price="menu.price"
+            />
           </table>
+        </div>
+        <div class="menu__img">
+          <img src="@/assets/img/white-img/menu-img-3.png" alt="" />
         </div>
       </div>
     </div>
@@ -95,9 +96,8 @@ import { defineOptions } from "vue";
 
 import CardboardSection from "@/components/sections/CardboardSection.vue";
 import MenuHeading from "@/components/ui/MenuHeading.vue";
-import TheTable from "@/components/ui/TheTable.vue";
 import PhotoSection from "@/components/sections/PhotoSection.vue";
-
+import TheTable from "@/components/ui/TheTable.vue";
 defineOptions({
   name: "MenuPage",
 });
@@ -111,8 +111,10 @@ const banquet = [
   },
   {
     id: "4",
-    title: "Veal leg marinated in honey and horseradish, baked with mustard seeds",
-    description: "Served with porcini mushroom sauce (order from 4 kg), 1000 g.",
+    title:
+      "Veal leg marinated in honey and horseradish, baked with mustard seeds",
+    description:
+      "Served with porcini mushroom sauce (order from 4 kg), 1000 g.",
     price: "person 2",
   },
   {
@@ -132,7 +134,7 @@ const banquet = [
     title: "Duck, aged in honey liqueur, stuffed with apples and cherries",
     description: "Served with Madeira sauce, 1pc~2000 g.",
     price: "person 2",
-  }
+  },
 ];
 
 const sideDishes = [
@@ -160,7 +162,7 @@ const sideDishes = [
     description: "150 g",
     price: "person 2",
   },
-]
+];
 const salads = [
   {
     id: "2rwf8767w",
@@ -183,9 +185,11 @@ const salads = [
   {
     id: "2r45667w",
     title: "Salad Quail s Nest",
-    description: "Veal tongue, ham, baked beef, quail eggs, cheese, fresh cucumber, 200 g.",
+    description:
+      "Veal tongue, ham, baked beef, quail eggs, cheese, fresh cucumber, 200 g.",
     price: "person 2",
-  },  {
+  },
+  {
     id: "2rwffgdw",
     title: "Salad with fried salmon slices, crispy lettuce, tangerine slices",
     description: "with pine nuts and caviar dressing, 200 g.",
@@ -194,10 +198,10 @@ const salads = [
   {
     id: "232367w",
     title: "Far Eastern Salad",
-    description: "with squid, red caviar, avocado, fresh cucumber, egg and celery, dressed with Japanese mayonnaise, 200 g.",
+    description:
+      "with squid, red caviar, avocado, fresh cucumber, egg and celery, dressed with Japanese mayonnaise, 200 g.",
     price: "person 2",
   },
-  
-]
+];
 </script>
 
