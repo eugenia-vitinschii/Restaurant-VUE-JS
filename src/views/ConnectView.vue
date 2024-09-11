@@ -3,21 +3,22 @@
   <cardboard-section
     :heading="'Connect'"
     :subheading="'We will make sure that your celebration will be remembered for a long time!'"
-    :button="'LET S CONNECT'"
-    :img="'src/assets/img/bg-img/order-lunch.png'"
-    :media="'src/assets/img/bg-heading/order-lunch.png'"
+    :button="'see menu'"
+    @getLink="$router.push('/menu')"
+    :img="'src/assets/img/bg-img/menu-img.png'"
+    :media="'src/assets/img/bg-heading/home-img-3.png'"
   />
   <!-- let's connect  scrolling section -->
-  <photo-section :preview="'src/assets/img/bg-heading/order-lunch.png'" />
-  <div class="info">
+  <photo-section :preview="'src/assets/img/photo-section/food-bg.png'" />
+  <div class="connect">
     <div class="container">
-      <div class="info__wrapper">
+      <div class="connect__wrapper">
         <p class="heading-white">connect</p>
       </div>
     </div>
   </div>
   <!--  let's connect scrolling section -->
-  <photo-section :preview="'src/assets/img/bg-heading/order-lunch.png'" />
+  <photo-section :preview="'src/assets/img/photo-section/menu-banquet.png'" />
 </template>
    
 <script setup>

@@ -3,9 +3,10 @@
   <cardboard-section
     :heading="'Catering menu'"
     :subheading="'The luxurious renovated hall Seasons, decorated with living greenery and radiating a summer mood'"
-    :button="'LET S CONNECT'"
-    :img="'src/assets/img/bg-img/order-lunch.png'"
-    :media="'src/assets/img/bg-heading/order-lunch.png'"
+    :button="'order catering'"
+    @getLink="$router.push('/order-catering')"
+    :img="'src/assets/img/bg-img/catering-img.png'"
+    :media="'src/assets/img/bg-heading/catering-img.png'"
   />
   <!-- catering menu section buffet-->
   <div class="menu">
@@ -13,7 +14,7 @@
       <div class="menu__wrapper">
         <menu-heading
           :heading="'Buffet menu'"
-          :img="'src/assets/img/bg-heading/order-lunch.png'"
+          :img="'src/assets/img/white-heading/catering-header-1.png'"
         />
         <div class="menu__table">
           <table>
@@ -27,20 +28,20 @@
           </table>
         </div>
         <div class="menu__img">
-          <img src="@/assets/img/bg-heading/order-lunch.png" alt="" />
+          <img src="@/assets/img/white-img/catering-img-1.png" alt="bg" />
         </div>
       </div>
     </div>
   </div>
   <!-- catering menu scrolling section -->
-  <photo-section :preview="'src/assets/img/bg-heading/order-lunch.png'" />
+  <photo-section :preview="'src/assets/img/photo-section/catering-bg-1.png'" />
   <!-- catering menu sideDishes-->
   <div class="menu">
     <div class="container">
       <div class="menu__wrapper">
         <menu-heading
           :heading="'Hot appetizers'"
-          :img="'src/assets/img/bg-heading/order-lunch.png'"
+          :img="'src/assets/img/white-heading/catering-header-2.png'"
         />
         <div class="menu__table">
           <table>
@@ -54,13 +55,13 @@
           </table>
         </div>
         <div class="menu__img">
-          <img src="@/assets/img/bg-heading/order-lunch.png" alt="" />
+          <img src="@/assets/img/white-img/catering-img-2.png" alt="bg" />
         </div>
       </div>
     </div>
   </div>
   <!-- catering menu scrolling section -->
-  <photo-section :preview="'src/assets/img/bg-heading/order-lunch.png'" />
+  <photo-section :preview="'src/assets/img/photo-section/catering-bg-2.png'" />
 </template>
    
 <script setup>
@@ -124,9 +125,46 @@ const buffet = [
 const appetizers = [
   {
     id: "2rgjw6j43fw",
-    title: "Bruschetta with light-semi-salmon and guacamole",
+    title: "Spring roll with shrimp, mango, avocado and sweet chili sauce",
+    description: "2 pcs (100 g) / 30 g",
+    price: "person 2",
+  },
+  {
+    id: "33fsdsdf",
+    title: "Spring roll with chicken, vegetables and sweet chili sauce",
+    description: "2 pcs (120 g) / 30 g.",
+    price: "person 2",
+  },
+  {
+    id: "3etewf",
+    title: "Spring roll with perch fillet, avocado and cheese",
+    description: "Served with sweet chili sauce, 2 pcs (100 g) / 30 g.",
+    price: "person 2",
+  },
+  {
+    id: "3fg",
+    title: "Tiger shrimp in batter and Tom Yam sauce",
+    description: "1 pc. — 30 g.",
+    price: "person 2",
+  },
+  {
+    id: "3sae3fw",
+    title: "Kiwi mussels baked with cheese",
+    description: "4 pcs. — 200 g.",
+    price: "person 2",
+  },
+  {
+    id: "343433fw",
+    title: "Chicken julienne with champignons",
+    description: "90 g.",
+    price: "person 2",
+  },
+  {
+    id: "3fderj43fw",
+    title: "Pancake bag with porcini mushroom julienne",
     description: "80 g.",
     price: "person 2",
   },
+
 ];
 </script>

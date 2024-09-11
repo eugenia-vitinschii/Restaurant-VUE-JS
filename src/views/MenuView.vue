@@ -3,6 +3,7 @@
     :heading="'Banquet menu'"
     :subheading="'The banquet menu of our restaurant has more than 1500 different items, providing a wide choice of dishes for your unforgettable celebration.'"
     :button="'LET S CONNECT'"
+    @getLink="$router.push('/lets-connect')"
     :img="'src/assets/img/bg-img/menu-img.png'"
     :media="'src/assets/img/bg-heading/menu-heading.png'"
   />

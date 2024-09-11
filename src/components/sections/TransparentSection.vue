@@ -7,7 +7,7 @@
            <p class="subheading-white">{{ subheading }}</p>
          </div>
          <div class="section__buttons">
-           <the-button class="button-white">{{ button }}</the-button>
+           <the-button @click="$emit('getLink')" class="button-white">{{ button }}</the-button>
          </div>
        </div>
      </div>

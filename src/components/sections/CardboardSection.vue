@@ -8,7 +8,7 @@
             <p class="subheading-green">{{ subheading }}</p>
           </div>
           <div class="section__buttons">
-            <the-button class="button-green">{{ button }}</the-button>
+            <the-button @click="$emit('getLink')" class="button-green">{{ button }}</the-button>
           </div>
           <div class="section__img">
             <img :src="img" alt="Section img" />
