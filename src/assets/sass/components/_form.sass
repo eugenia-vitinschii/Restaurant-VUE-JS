@@ -2,18 +2,24 @@
    background: $white
    &__wrapper
    &__form
+   &__items
+      display: flex
+      flex-direction: row
+      margin-bottom: 10px
    &__item
       width: 100%
-      margin-top: $margin-top
+      margin-left: 10px
+      align-self: flex-end
       label
          width: 100%
          display: block
          font-size: 15px
-         margin: 16px 0px
          color: $dark-green
+         margin-top: 20px
+      input, textarea, select
+         display: block
+         margin: 10px 10px 0px 0px
       input::placeholder
          font-size: 16px
          color: $white
          width: 100%
-
-

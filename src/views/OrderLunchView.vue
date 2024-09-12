@@ -2,7 +2,7 @@
   <cardboard-section
     :heading="'ORDER LUNCH'"
     :subheading="'We deliver standard set lunches.'"
-    :button="'LET S CONNECT'"
+    :button="'LET\'\S CONNECT'"
     @getLink="$router.push('/lets-connect')"
     :img="'src/assets/img/bg-img/order-lunch.png'"
     :media="'src/assets/img/bg-heading/order-lunch.png'"
