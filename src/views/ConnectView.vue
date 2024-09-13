@@ -13,7 +13,21 @@
   <div class="connect">
     <div class="container">
       <div class="connect__wrapper">
-        <p class="heading-white">connect</p>
+        <div class="connect__media">
+            <img src="@/assets/img/white-img/catering-img-2.png" alt="">
+          </div>
+        <div class="connect__items">
+          <p class="heading-green connect__item--title">Locations</p>
+          <connect-data 
+            v-for="item in data"
+            :key="item.id"
+            :adress="item.adress"
+            :workDays="item.workDays"
+            :closedDays="item.closedDays"
+            :street="item.street"
+            :phone="item.phone"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -26,9 +40,37 @@ import { defineOptions } from "vue";
 
 import CardboardSection from "@/components/sections/CardboardSection.vue";
 import PhotoSection from "@/components/sections/PhotoSection.vue";
+import ConnectData from "@/components/ui/ConnectData.vue";
 
 defineOptions({
   name: "ConnectPage",
 });
+
+const data = [
+  {
+    id: "2353we",
+    adress: "Gorky Central Park",
+    workDays: "Monday - friday 11AM -2PM",
+    closedDays: "Sat, sun: closed",
+    street: "Krymsky Val, house 9, building 20",
+    phone: "(613) 323 - 4648",
+  },
+  {
+    id: "4323we",
+    adress: "Gorky Central Park",
+    workDays: "Monday - friday 10AM -8PM",
+    closedDays: "Sat, sun: closed",
+    street: "Krymsky Val, house 9, building 20",
+    phone: "(613) 323 - 4864",
+  },
+  {
+    id: "2rer3we",
+    adress: "Gorky Central Park",
+    workDays: "Monday - friday 8AM -8PM",
+    closedDays: "Sat, sun: closed",
+    street: "Krymsky Val, house 9, building 20",
+    phone: "(613) 323 - 4884",
+  },
+];
 </script>
    

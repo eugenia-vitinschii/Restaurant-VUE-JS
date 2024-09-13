@@ -1,6 +1,7 @@
 .form
    background: $white
    &__wrapper
+      padding: 40px 0px
    &__form
    &__items
       display: flex
@@ -23,3 +24,10 @@
          font-size: 16px
          color: $white
          width: 100%
+
+
+@media (max-width: 767px)
+   .form
+      &__items
+         flex-direction: column
+         margin-bottom: 5px

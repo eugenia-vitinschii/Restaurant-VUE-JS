@@ -1,4 +1,19 @@
 .info
-   background: $white
+   background: $white  
    &__wrapper
- 
+      padding: 40px 0px
+   &__wrapper--item
+      margin-bottom: 80px
+   ul li
+      list-style: circle
+
+
+@media (max-width: 1024px)
+   .info
+      &__wrapper--item
+         margin-bottom: 50px
+
+@media (max-width: 767px)
+   .info
+      &__wrapper--item
+         margin-bottom: 30px

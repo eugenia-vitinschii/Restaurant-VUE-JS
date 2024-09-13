@@ -25,6 +25,11 @@
 .body-text-green
    @include font-style($body-text, $padding-top, $dark-green)
 
+.small-text-gray
+   @include font-style(10px, $padding-top, $dark-gray)
+   text-transform: none
+.green
+   color: green
 
 @media (max-width: 1024px)
    .heading-white, .heading-green

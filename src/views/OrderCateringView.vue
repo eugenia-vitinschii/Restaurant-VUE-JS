@@ -23,7 +23,7 @@
           />
           <div class="form__items">
             <div class="form__item">
-              <label for="company">Company name {{ formData.company }}</label>
+              <label for="company" class="small-text-gray">Company name {{ formData.company }}</label>
               <input type="text" class="input" id="company" v-model="formData.company" />
             </div>
           </div>
@@ -78,7 +78,7 @@
           />
           <div class="form__items">
             <div class="form__item">
-              <label for="number">Number of guests {{ formData.number }}</label>
+              <label for="number" class="small-text-gray">Number of guests {{ formData.number }}</label>
               <input type="text" class="input" id="number" v-model.number="formData.number"/>
             </div>
             <div class="form__item">
