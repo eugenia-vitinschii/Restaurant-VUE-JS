@@ -32,6 +32,8 @@
     :button="'view answers'"
     @getLink="$router.push('/catering-faq')"
   />
+  <!-- Data section -->
+  <the-data/>
   <!--section-->
   <cardboard-section
     :heading="'need lunch?'"
@@ -54,11 +56,12 @@
 <script setup>
 import { defineOptions } from "vue";
 
+import TransparentSection from "@/components/sections/TransparentSection.vue";
+import CardboardSection from "@/components/sections/CardboardSection.vue";
+import TheData from "@/components/ui/TheData.vue";
+
 defineOptions({
   name: "HomePage",
 });
 
-
-import TransparentSection from "@/components/sections/TransparentSection.vue";
-import CardboardSection from "@/components/sections/CardboardSection.vue";
 </script>

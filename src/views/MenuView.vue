@@ -38,6 +38,8 @@
   <photo-section
     :preview="'src/assets/img/photo-section/menu-sideDishes.jpg'"
   />
+    <!-- Data section -->
+    <the-data/>
   <!-- menu section sideDishes-->
   <div class="menu">
     <div class="container">
@@ -99,6 +101,7 @@ import CardboardSection from "@/components/sections/CardboardSection.vue";
 import MenuHeading from "@/components/ui/MenuHeading.vue";
 import PhotoSection from "@/components/sections/PhotoSection.vue";
 import TheTable from "@/components/ui/TheTable.vue";
+import TheData from "@/components/ui/TheData.vue";
 defineOptions({
   name: "MenuPage",
 });

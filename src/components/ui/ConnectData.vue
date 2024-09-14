@@ -9,7 +9,7 @@
       <li class="body-text-green">{{ workDays}}</li>
       <li class="body-text-green"> {{ closedDays }}</li>
       <li class="body-text-green"> {{ street }}</li>
-      <li class="body-text-green">Phone: <span class="green">{{ phone}}</span></li>
+      <li><a class="body-text-green" :href="phone">Phone: <span class="green">{{ phone}}</span></a></li>
       </ul>
     </div>
   </div>

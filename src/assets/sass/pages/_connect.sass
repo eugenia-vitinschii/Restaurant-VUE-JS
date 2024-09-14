@@ -8,6 +8,8 @@
    &__items
    &__item
       margin-bottom: 30px
+      li
+         margin-left: -20px
    &__item--img
       width: 50px
       img
@@ -19,3 +21,12 @@
       width: 500px
       img
          width: 100%
+
+@media (max-width: 767px)
+   .connect
+      &__wrapper
+         justify-content: start
+      &__item
+         width: 100%
+      &__media
+         display: none
