@@ -14,7 +14,9 @@
             <img :src="img" alt="Section img" />
           </div>
         </div>
-        <div class="section__media">
+        <div class="section__media"
+        v-motion-fade 
+        >
           <img :src="media" alt="img" />
         </div>
       </div>

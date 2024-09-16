@@ -16,6 +16,7 @@
   <div class="form">
     <div class="container">
       <div class="form__wrapper">
+        <!-- order form -->
         <form class="form__form">
           <menu-heading
             :heading="'Company data'"

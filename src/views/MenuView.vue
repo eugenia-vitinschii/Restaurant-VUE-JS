@@ -29,7 +29,7 @@
           </table>
         </div>
         <div class="menu__img">
-          <img src="@/assets/img/white-img/menu-img-1.png" alt="" />
+          <img src="@/assets/img/white-img/menu-img-1.png" alt="menu img" />
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@
           </table>
         </div>
         <div class="menu__img">
-          <img src="@/assets/img/white-img/menu-img-2.png" alt="" />
+          <img src="@/assets/img/white-img/menu-img-2.png" alt="menu img" />
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@
           </table>
         </div>
         <div class="menu__img">
-          <img src="@/assets/img/white-img/menu-img-3.png" alt="" />
+          <img src="@/assets/img/white-img/menu-img-3.png" alt="menu img" />
         </div>
       </div>
     </div>

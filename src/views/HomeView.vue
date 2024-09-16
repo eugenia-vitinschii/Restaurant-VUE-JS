@@ -18,6 +18,7 @@
   />
   <!--section menu-->
   <cardboard-section
+
     :heading="'Sliced ​​vitamins'"
     :subheading="'sliced ​​vegetables and fruits for your holidays from the most delicious vegetables'"
     :button="'view catering'"

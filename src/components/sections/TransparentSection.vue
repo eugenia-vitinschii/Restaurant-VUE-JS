@@ -18,6 +18,8 @@
   import { defineOptions } from "vue";
   import {defineProps} from "vue";
 
+  import TheButton from "../ui/TheButton.vue";
+  
   defineOptions({
     name: "TransparentSection",
   });

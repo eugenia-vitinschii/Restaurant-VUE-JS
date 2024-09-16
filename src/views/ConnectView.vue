@@ -14,7 +14,7 @@
     <div class="container">
       <div class="connect__wrapper">
         <div class="connect__media">
-            <img src="@/assets/img/white-img/catering-img-2.png" alt="">
+            <img src="@/assets/img/white-img/catering-img-2.png" alt="media">
           </div>
         <div class="connect__items">
           <div class="connect__item">
