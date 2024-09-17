@@ -4,7 +4,7 @@
       <p class="heading-green">{{ heading }}</p>
     </div>
     <div class="menu__heading--img"
-    v-motion-pop-visible
+    v-motion-roll-visible-bottom 
     >
       <img :src="img" alt="menu-img" />
     </div>

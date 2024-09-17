@@ -1,7 +1,9 @@
 <template>
-   <div class="section" >
+   <div class="section">
      <div class="container">
-       <div class="section__wrapper">
+       <div class="section__wrapper"
+       v-motion-roll-visible-bottom 
+    >
          <div class="section__text text">
            <p class="heading-white">{{ heading }}</p>
            <p class="subheading-white">{{ subheading }}</p>

@@ -78,7 +78,7 @@
         <div class="menu__table">
           <table>
             <the-table
-              v-for="menu in sideDishes"
+              v-for="menu in salads"
               :key="menu.id"
               :title="menu.title"
               :description="menu.description"
@@ -111,7 +111,7 @@ const banquet = [
     id: "2",
     title: "Sterlet cooked in herbs",
     description: "Served with creamy caviar sauce (order from 2 kg), 1000 g.",
-    price: "person 2",
+    price: "per person 9.99",
   },
   {
     id: "4",
@@ -119,25 +119,25 @@ const banquet = [
       "Veal leg marinated in honey and horseradish, baked with mustard seeds",
     description:
       "Served with porcini mushroom sauce (order from 4 kg), 1000 g.",
-    price: "person 2",
+      price: "per person 9.99",
   },
   {
     id: "45r2",
     title: "Baked pork ham",
     description: "Served with porcini mushroom sauce (order from 3 kg), 1000 g",
-    price: "person 2",
+    price: "per person 8.99",
   },
   {
     id: "45dddr2",
     title: "Whole baked turkey",
     description: "Served with cranberry sauce, 1pc~3300 / 300 g.",
-    price: "person 2",
+    price: "per person 7.99",
   },
   {
     id: "45rhh2",
     title: "Duck, aged in honey liqueur, stuffed with apples and cherries",
     description: "Served with Madeira sauce, 1pc~2000 g.",
-    price: "person 2",
+    price: "per person 4.00",
   },
 ];
 
@@ -146,25 +146,25 @@ const sideDishes = [
     id: "2rwfw",
     title: "Country-style fried potatoes",
     description: "150 g.",
-    price: "person 2",
+    price: "per person 7.99",
   },
   {
     id: "2r23frwfw",
     title: "French fries",
     description: "150 g.",
-    price: "person 2",
+    price: "per person 5.99",
   },
   {
     id: "2rweqw43fw",
     title: "Grilled vegetables",
     description: "Champignon, zucchini, eggplant, bell pepper, 150 g",
-    price: "person 2",
+    price: "per person 7.99",
   },
   {
     id: "2rweqw43fw",
     title: "Steamed broccoli",
     description: "150 g",
-    price: "person 2",
+    price: "per person 6.99",
   },
 ];
 const salads = [
@@ -172,39 +172,39 @@ const salads = [
     id: "2rwf8767w",
     title: "Caesar salad with chicken",
     description: "125/65 g.",
-    price: "person 2",
+    price: "per person 10.99",
   },
   {
     id: "2wef",
     title: "Olivier salad with beef tongue",
     description: "dressed with Japanese mayonnaise, 200 g.",
-    price: "person 2",
+    price: "per person 57.99",
   },
   {
     id: "2rhgfdsw",
     title: "Caesar salad with chicken",
     description: "125/65 g.",
-    price: "person 2",
+    price: "per person 23.99",
   },
   {
     id: "2r45667w",
     title: "Salad Quail s Nest",
     description:
       "Veal tongue, ham, baked beef, quail eggs, cheese, fresh cucumber, 200 g.",
-    price: "person 2",
+      price: "per person 7.99",
   },
   {
     id: "2rwffgdw",
     title: "Salad with fried salmon slices, crispy lettuce, tangerine slices",
     description: "with pine nuts and caviar dressing, 200 g.",
-    price: "person 2",
+    price: "per person 12.99",
   },
   {
     id: "232367w",
     title: "Far Eastern Salad",
     description:
       "with squid, red caviar, avocado, fresh cucumber, egg and celery, dressed with Japanese mayonnaise, 200 g.",
-    price: "person 2",
+      price: "per person 71.99",
   },
 ];
 </script>

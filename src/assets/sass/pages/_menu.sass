@@ -1,7 +1,7 @@
 .menu
    background: $white
    &__wrapper
-      
+
    &__heading
       display: flex
       flex-direction: row
@@ -16,7 +16,12 @@
    &__table
       table
          width: 100%
-                  
+         td
+            padding: 10px
+         tr
+            transition: $transnision
+         tr:hover
+            background:$ivory
    &__table--price
       text-align: right
    &__img

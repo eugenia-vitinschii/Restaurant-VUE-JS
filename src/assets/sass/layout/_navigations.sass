@@ -1,17 +1,49 @@
-.wrapper 
+.wrapper
 	background: $dark-green
 	display: flex
 	flex-direction: column
 	min-height: 100vh
 
-.content 
+.content
 	flex: 1 0 auto
 	padding: 0px 0px 0px 0px
 
-.container 
+.container
 	max-width: 1400px
 	margin: 0px auto
 	padding: 0px 10px
- 
-.footer 
+
+.footer
 	flex: 0 0 auto
+
+.scroll
+	position: fixed
+	bottom: 0
+	right: 0
+	width: 60px
+	height: 60px
+	margin: 20px
+	border: 1px solid $dark-gray
+	transition: $transnision
+	background: $ivory
+	path
+		stroke: $dark-gray
+
+.scroll:hover
+	background: transparent
+	border: 1px solid $ivory
+	path
+		stroke: $ivory
+		
+@media (max-width: 1024px)
+	.scroll, svg
+		width: 50px
+		height: 50px
+
+@media (max-width: 767px)
+	.scroll
+		margin: 10px
+	.scroll, svg
+		width: 40px
+		height: 40px
+	
