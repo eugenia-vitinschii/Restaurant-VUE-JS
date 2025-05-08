@@ -1,22 +1,48 @@
-$\color{#476F2F}{\textsf{Responsive corporate website Restaurant}}$
-
-//https://www.youtube.com/watch?v=lPvmx-jNw90 link to youtube
+# 🍽️  Restaurant Multi-page Website
 
 ![VUE](https://img.shields.io/badge/Vue%20JS%203-476F2F?style=flat&logo=vuedotjs&logoColor=fff)
 ![SASS](https://img.shields.io/badge/SASS-476F2F?style=flat&logo=sass&logoColor=fff)
 ![HTML](https://img.shields.io/badge/HTML%205-476F2F?style=flat&logo=html5&logoColor=fff)
 
-### @vueuse/motion | @keyframes 
 
-$\color{#4D433D}{\textsf{clik for see video on youtube }}$
+## Project setup
+```
+npm install
+```
 
-<a href="https://www.youtube.com/watch?v=lPvmx-jNw90">![Static Badge](https://img.shields.io/badge/VUE%20JS%20-4D433D?style=flat&logo=youtube&logoColor=fff)
- </a>
-<a href="https://www.youtube.com/watch?v=kWNPwkxEhoo">![Static Badge](https://img.shields.io/badge/VUE%20JS%20-4D433D?style=flat&logo=youtube&logoColor=fff)
- </a>
+### Compiles and hot-reloads for development
+```
+npm run dev
+```
 
- ![restaurant](https://github.com/user-attachments/assets/9e43bc59-2cb0-4ea3-bfc4-c5521c82447b)
+## 🔗 Demo Video
 
+▶️ [Watch on YouTube](https://www.youtube.com/watch?v=lPvmx-jNw90)  
+
+![restaurant](https://github.com/user-attachments/assets/95ff5ff1-c25b-4495-b00c-972ffe26d113)
+
+
+### 🛠️ Technologies Used
+- Vue 3 — composition API with <script setup>
+- Vite — fast build and development tool
+- Vue Router — for smooth page navigation
+- -Sass/SCSS — modular styling using partials and @use/@forward
+- @vueuse/motion — scroll-triggered animations and element transitions
+- HTML Tables — used for structured and readable menu layout
+
+### 🎨 Features
+- Scroll-based animations and transitions
+- Hover effects on interactive elements
+- Adaptive and mobile-friendly design
+- Clean and maintainable SCSS file structure
+- Modular architecture for pages and components
+
+
+
+
+
+
+```
 src
    - assets
       - sass
@@ -25,7 +51,6 @@ src
             - _animations.sass
             - _mixin.sass
             - _variables.sass
-            - _modifer.sass
          - components
             - _all.sass
             - _data.sass
@@ -82,15 +107,5 @@ src
       - OrderLunchView.vue
    - App.vue
    main.js
-
-
-
-## Project setup
-```
-npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run dev
-```
