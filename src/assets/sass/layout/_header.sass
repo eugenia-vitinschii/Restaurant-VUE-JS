@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;  
+
+
 .header
    background-image: url("../img/bg.png")
    background-repeat: repeat
@@ -5,11 +8,13 @@
    position: fixed
    width: 100%
    z-index: 544
+   padding-top: 10px
    &__wrapper
       display: flex
       align-items: center
    &__logo
       width:80px
+      margin-left: 30px
       img
          width: 100%
    ul

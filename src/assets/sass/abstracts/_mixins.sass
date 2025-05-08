@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;  
+
 @mixin button-style($color, $bg, $border)
    text-align: center
    padding: 5px 20px
@@ -7,7 +9,7 @@
    text-transform: uppercase
    color: $color
    background: $bg
-   transition: $transnision
+   transition: $transition
    cursor: pointer
 
 @mixin font-style($font-size, $padding, $color)
